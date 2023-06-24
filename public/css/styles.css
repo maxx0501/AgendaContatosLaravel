@@ -1,0 +1,133 @@
+.card-container {
+    box-shadow: 0px 1px 2px rgb(0, 0, 0, 0.3);
+  }
+  .card-footer {
+    justify-content: end;
+    display: flex;
+  }
+  
+  
+  
+  /*modal cadastrar*/
+  .modal-content {
+    padding: 25px;
+    border-radius: 30px;
+  }
+  
+  .modal-header {
+    justify-content: center;
+  }
+  
+  .modal-header h1 {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .modal-header h1 span {
+    position: absolute;
+    display: block;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,100% {
+      left: 100%;
+    }
+  }
+  .nav-link{
+    cursor: pointer;
+  }
+  
+  .modal-header h1 span:nth-child(1) {
+    bottom: 2px;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03f40f);
+    animation: btn-anim1 2s linear infinite;
+  }
+  
+  .button-container{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+  }
+  button{
+    margin: 0.5rem;
+  }
+
+
+  /*input e label do form*/
+  /* Input container */
+  .input-container {
+    position: relative;
+    margin: 20px;
+    margin-top: 1.8rem;
+  }
+  
+  /* Input field */
+  .input-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  /* Input label */
+  .input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: rgba(204, 204, 204, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input highlight */
+  .input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #198754;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input field:focus styles */
+  .input-field:focus + .input-label {
+    top: -20px;
+    font-size: 12px;
+    color: #198754;
+  }
+  
+  .input-field:focus + .input-label + .input-highlight {
+    width: 100%;
+  }
+  
+  .card-contatos{
+    padding: 1rem;
+    border-radius: 1.5rem;
+  }
+  /*footer*/
+  .footer {
+    margin-top: 2.6rem;
+  }
